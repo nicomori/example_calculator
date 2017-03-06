@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[<div "featureFile">Feature File: Case_1A2.feature</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "feature">Feature: Interview Nicolas Mori</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "scenarioOutline">Scenario Outline: Get a random user (userID) , print its address to output and verify email format is correct</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "scenario">Scenario Outline: Get a random user (userID) , print its address to output and verify email format is correct</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Given  I start the android native calculator with this device &quot;&lt;device uuid&gt;&quot; (passed : 177s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  access the number &quot;&lt;first number&gt;&quot; (failed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  press the symbol &quot;&lt;symbol&gt;&quot; (skipped)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  access the number &quot;&lt;second number&gt;&quot; (skipped)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  press the symbol &quot;&lt;equal&gt;&quot; (skipped)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Then  show the result per console (skipped)</div>]]>
+    </line>
+  </reporter-output>
+  <suite name="Test runner" duration-ms="178157" started-at="2017-03-06T21:12:57Z" finished-at="2017-03-06T21:15:55Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.run_cukes()[pri:0, instance:com.demo.nicolas.mori.AppTest@d2cc05a]" name="run_cukes" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="test" duration-ms="178157" started-at="2017-03-06T21:12:57Z" finished-at="2017-03-06T21:15:55Z">
+      <class name="com.demo.nicolas.mori.AppTest">
+        <test-method status="FAIL" signature="run_cukes()[pri:0, instance:com.demo.nicolas.mori.AppTest@d2cc05a]" name="run_cukes" duration-ms="178137" started-at="2017-03-06T22:12:57Z" description="Runs Cucumber Features" finished-at="2017-03-06T22:15:55Z">
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[java.lang.NullPointerException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.NullPointerException
+	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:48)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.run_cukes(AbstractTestNGCucumberTests.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:200)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.run(AbstractTestNGCucumberTests.java:19)
+	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:212)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:689)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:882)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1189)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: java.lang.NullPointerException
+	at com.demo.nicolas.mori.framework.DSL.click(DSL.java:26)
+	at com.demo.nicolas.mori.page.object.CalculatorHomePage.pressInTheNumber(CalculatorHomePage.java:81)
+	at com.demo.nicolas.mori.steps.StepsMobile.accessTheNumber(StepsMobile.java:22)
+	at ✽.And access the number "100"(Case_1A2.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<div "featureFile">Feature File: Case_1A2.feature</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "feature">Feature: Interview Nicolas Mori</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "scenarioOutline">Scenario Outline: Get a random user (userID) , print its address to output and verify email format is correct</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "scenario">Scenario Outline: Get a random user (userID) , print its address to output and verify email format is correct</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Given  I start the android native calculator with this device &quot;&lt;device uuid&gt;&quot; (passed : 177s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  access the number &quot;&lt;first number&gt;&quot; (failed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  press the symbol &quot;&lt;symbol&gt;&quot; (skipped)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  access the number &quot;&lt;second number&gt;&quot; (skipped)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  press the symbol &quot;&lt;equal&gt;&quot; (skipped)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Then  show the result per console (skipped)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- run_cukes -->
+      </class> <!-- com.demo.nicolas.mori.AppTest -->
+    </test> <!-- test -->
+  </suite> <!-- Test runner -->
+</testng-results>

@@ -1,0 +1,10 @@
+com/demo/nicolas/mori/framework/ParentPage.class
+rest/client/GetJson.class
+rest/client/UpdateJson.class
+rest/Post.class
+com/demo/nicolas/mori/framework/ParentScenario.class
+com/demo/nicolas/mori/steps/StepsMobile.class
+com/demo/nicolas/mori/framework/DSL.class
+com/demo/nicolas/mori/steps/StepsJSon.class
+com/demo/nicolas/mori/AppTest.class
+com/demo/nicolas/mori/page/object/CalculatorHomePage.class

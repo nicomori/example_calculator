@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="177.581436">
+<testcase classname="Interview Nicolas Mori" name="Get a random user (userID) , print its address to output and verify email format is correct" time="177.581436">
+<failure message="java.lang.NullPointerException&#10;&#9;at com.demo.nicolas.mori.framework.DSL.click(DSL.java:26)&#10;&#9;at com.demo.nicolas.mori.page.object.CalculatorHomePage.pressInTheNumber(CalculatorHomePage.java:81)&#10;&#9;at com.demo.nicolas.mori.steps.StepsMobile.accessTheNumber(StepsMobile.java:22)&#10;&#9;at ✽.And access the number &quot;100&quot;(Case_1A2.feature:7)&#10;"><![CDATA[Given I start the android native calculator with this device "266DE50BB1144087B603D03CE45E7C37".passed
+And access the number "100".................................................failed
+And press the symbol "+"....................................................skipped
+And access the number "20"..................................................skipped
+And press the symbol "="....................................................skipped
+Then show the result per console............................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at com.demo.nicolas.mori.framework.DSL.click(DSL.java:26)
+	at com.demo.nicolas.mori.page.object.CalculatorHomePage.pressInTheNumber(CalculatorHomePage.java:81)
+	at com.demo.nicolas.mori.steps.StepsMobile.accessTheNumber(StepsMobile.java:22)
+	at ✽.And access the number "100"(Case_1A2.feature:7)
+]]></failure>
+</testcase>
+</testsuite>
